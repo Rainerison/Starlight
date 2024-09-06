@@ -1,7 +1,14 @@
 #root {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   background: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 55, 1) 100%);
+=======
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+>>>>>>> 1aa0473a0256461b2ecb560942ae0877726ba135
 }
 
 .logo {

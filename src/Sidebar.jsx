@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './Sidebar.css';
 import img4 from './assets/Mask Group.jpeg';
@@ -43,4 +44,18 @@ const Sidebar = () => {
   );
 };
 
+=======
+import React from 'react';
+import './Sidebar.css';
+
+const Sidebar = () => {
+  return (
+    <aside className="sidebar">
+      <h2>espaço adicional</h2>
+      <p>espaço rezervado para maior detalhamento.</p>
+    </aside>
+  );
+};
+
+>>>>>>> 1aa0473a0256461b2ecb560942ae0877726ba135
 export default Sidebar;
