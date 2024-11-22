@@ -1,65 +1,39 @@
-<<<<<<< HEAD
 .header {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000f19;
-    color: white;
-    padding: 1px 10px;
-    border-bottom: 1px solid #000;
-  }
-  
-  .header .logo {
-    width: 50px; 
-    height: 50px;
-  }
-  
-  .header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-  }
-  
-  .header nav ul li {
-    cursor: pointer;
-  }
-  
-  nav button{
-    background-color: blue;
-  }
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000f19;
+  color: white;
+  padding: 2px 10px; 
+  border-bottom: 1px solid #000;
+  box-sizing: border-box; 
+  max-width: 100%; 
+  margin: 0 auto; 
+}
 
-  nav{
-    display: flex;
-    gap: 30px;
-  }
-=======
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000f19;
-    color: white;
-    padding: 5px 10px;
-  }
-  
-  .header .logo {
-    width: 50px; 
-    height: 50px;
-  }
-  
-  .header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header nav ul li {
-    cursor: pointer;
-  }
-  
->>>>>>> 1aa0473a0256461b2ecb560942ae0877726ba135
+.header .logo {
+  width: 120px;  
+  height: 120px; 
+  max-width: 100%; 
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li {
+  cursor: pointer;
+}
+
+nav button {
+  background-color: blue;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}

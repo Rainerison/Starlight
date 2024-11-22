@@ -1,44 +1,51 @@
-<<<<<<< HEAD
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';  
+import { FaHome, FaInfoCircle, FaPhoneAlt, FaUser, FaSignOutAlt } from 'react-icons/fa';
 import './Header.css';
-import logoImage from './assets/Vector.png';
+import logoImage from './assets/Starlight.png';
 
-const Header = () => {
+const Header = ({ onLogout }) => {
+  const navigate = useNavigate(); 
+
+  const handleLogout = () => {
+    onLogout();  
+    navigate('/');  
+  };
+
   return (
     <header className="header">
       <img src={logoImage} alt="Logo" className="logo" />
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Contato</li>
+          <li>
+            <Link to="/home">
+              <FaHome /> 
+            </Link>
+          </li>
+          <li>
+            <Link to="/sobre">
+              <FaInfoCircle /> 
+            </Link>
+          </li>
+          <li>
+            <Link to="/contato">
+              <FaPhoneAlt /> 
+            </Link>
+          </li>
         </ul>
-        <button>Minha Conta</button>
+
+        <Link to="/minha-conta">
+          <button>
+            <FaUser /> 
+          </button>
+        </Link>
+
+        <button className="logout-button" onClick={handleLogout}>
+          <FaSignOutAlt /> Sair
+        </button>
       </nav>
     </header>
   );
 };
 
 export default Header;
-=======
-import React from 'react';
-import './Header.css';
-import logoImage from './assets/Vector.png';
-
-const Header = () => {
-  return (
-    <header className="header">
-      <img src={logoImage} alt="Logo" className="logo" />
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Contato</li>
-        </ul>
-      </nav>
-    </header>
-  );
-};
-
-export default Header;
->>>>>>> 1aa0473a0256461b2ecb560942ae0877726ba135

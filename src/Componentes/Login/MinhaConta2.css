@@ -1,0 +1,70 @@
+.minha-conta-container {
+  width: 90%;
+  max-width: 450px; 
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(16, 8, 65, 0.85);
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box; 
+}
+
+.minha-conta-container h2 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px; 
+}
+
+.minha-conta-container .input-group {
+  width: 100%; 
+  margin-bottom: 20px; 
+}
+
+.input-group input {
+  width: 100%;
+  height: 50px;
+  padding: 15px 20px; 
+  background-color: #04031d;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  margin: 5px 0; 
+  box-sizing: border-box; 
+}
+
+.input-group input::placeholder {
+  color: #fff;
+}
+
+.minha-conta-container button {
+  width: 100%;
+  height: 50px;
+  background-color: #5C598D;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px; 
+}
+
+.minha-conta-container button:hover {
+  background-color: #4b4875;
+}
+
+.error-message, .success-message {
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}

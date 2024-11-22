@@ -1,14 +1,16 @@
-#root {
-<<<<<<< HEAD
+body {
   margin: 0;
   padding: 0;
   background: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 55, 1) 100%);
-=======
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
->>>>>>> 1aa0473a0256461b2ecb560942ae0877726ba135
+  padding-top: 70px; 
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .logo {
@@ -17,32 +19,125 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.header {
+  top: 0;
+  width: 100%;
+  background: transparent; 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .logo {
+  width: 50px;
+  height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header nav {
+  display: flex;
+  gap: 30px;
 }
 
-.card {
-  padding: 2em;
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+.header nav ul li {
+  cursor: pointer;
+}
+
+.header nav button {
+  background-color: blue;
+}
+
+.banner {
+  background-color: #091222;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid-item {
+  flex: 1 1 200px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.grid-item .description {
+  margin-bottom: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.grid-item:nth-child(2) img {
+  width: 100%;
+  margin: 1%;
+}
+
+.sidebar {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.img-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.news-card {
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 55, 1) 100%);
+  border-radius: 10px;
+  width: 40%;
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-content h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.news-content p {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.news-content span {
+  color: blue;
 }

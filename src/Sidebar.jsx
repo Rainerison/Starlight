@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 import img4 from './assets/Mask Group.jpeg';
 import img5 from './assets/Mask Group (2).jpeg';
@@ -8,54 +8,40 @@ import img6 from './assets/Mask Group (3).jpeg';
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <h2>Noticias mais recentes</h2>
+      <h2>Notícias mais recentes</h2>
       <div className='img-grid'>
         <div className='news-card'>
-        <img src={img4} alt="imagem4" />
-        <div className='news-content'>
-        <span>Animes</span>
-        <h3>Notícia 1</h3>
-        <p>Descrição da notícia 1</p>
-        <a href="#">Ler mais</a>
-        </div>
-        </div>
-
-        <div className='news-card'>
-        <img src={img5} alt="imagem5" />
-        <div className='news-content'>
-        <span>Animes</span>
-        <h3>Notícia 2</h3>
-        <p>Descrição da notícia 2</p>
-        <a href="#">Ler mais</a>
-        </div>
+          <img src={img4} alt="imagem4" />
+          <div className='news-content'>
+            <span>Animes</span>
+            <h3>Demon Slayer</h3>
+            <p>Veja as Últimas Novidades</p>
+            <Link to="/animes/1">Ler mais</Link>
+          </div>
         </div>
 
         <div className='news-card'>
-        <img src={img6} alt="imagem6" />
-        <div className='news-content'>
-        <span>Animes</span>
-        <h3>Notícia 3</h3>
-        <p>Descrição da notícia 3</p>
-        <a href="#">Ler mais</a>
+          <img src={img5} alt="imagem5" />
+          <div className='news-content'>
+            <span>Animes</span>
+            <h3>Studios Ghilib</h3>
+            <p>Veja as Últimas Novidades</p>
+            <Link to="/animes/2">Ler mais</Link>
+          </div>
         </div>
+
+        <div className='news-card'>
+          <img src={img6} alt="imagem6" />
+          <div className='news-content'>
+            <span>Animes</span>
+            <h3>Dragon Ball no Globoplay</h3>
+            <p>Veja as Últimas Novidades</p>
+            <Link to="/animes/3">Ler mais</Link>
+          </div>
         </div>
       </div>
     </aside>
   );
 };
 
-=======
-import React from 'react';
-import './Sidebar.css';
-
-const Sidebar = () => {
-  return (
-    <aside className="sidebar">
-      <h2>espaço adicional</h2>
-      <p>espaço rezervado para maior detalhamento.</p>
-    </aside>
-  );
-};
-
->>>>>>> 1aa0473a0256461b2ecb560942ae0877726ba135
 export default Sidebar;

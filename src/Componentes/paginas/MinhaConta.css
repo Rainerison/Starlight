@@ -1,0 +1,77 @@
+.minha-conta-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(16, 37, 73, 0.85); 
+  backdrop-filter: blur(10px); 
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.minha-conta-container h2 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.input-field {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.input-field label {
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-field input {
+  width: 85%;
+  height: 50px;
+  padding: 20px 45px;
+  border-radius: 8px;
+  background-color: #25228e;
+  color: #fff;
+  border: none;
+  margin-top: 8px;
+}
+
+.input-field input::placeholder {
+  color: #fff;
+}
+
+.input-field .icon {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #fff;
+}
+
+.minha-conta-container button {
+  width: 100%;
+  height: 50px;
+  background-color: #190ee6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.minha-conta-container button:hover {
+  background-color: #4b4875;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  text-align: center;
+}
